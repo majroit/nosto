@@ -2,7 +2,7 @@
     "name": "currency-converter-frontend",
     "version": "1.0.0",
     "scripts": {
-        "dev": "vite",
+        "dev": "vite --debug",
         "build": "vite build",
         "serve": "vite preview"
     },
