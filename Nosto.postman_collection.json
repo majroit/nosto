@@ -7,10 +7,41 @@
 	},
 	"item": [
 		{
+			"name": "getToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/csrf-token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"csrf-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "convert",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "X-XSRF-TOKEN",
+						"value": "s3CuWaj4-pqO14Xe0mG9JvpEsNJDUxQbr9I0",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n  \"sourceCurrency\": \"USD\",\r\n  \"targetCurrency\": \"GBP\",\r\n  \"amount\": 30\r\n}",
