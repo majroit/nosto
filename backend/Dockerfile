@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install dependencies including devDependencies
 RUN npm install
 
+# Optionally install nodemon globally
+RUN npm install -g nodemon
+
 # Copy the rest of the application files
 COPY . .
 
