@@ -17,6 +17,10 @@ The API leverages the exchange rates provided at [swop.cx](https://swop.cx/) and
 ### Running with Docker(Redis, InfluxDB, Grafana, Backend, Frontend)
 - cd nosto 
   - docker-compose up -d
+  - backend: http://localhost:3000 
+  - frontend: http://localhost:4000
+  - InfluxDB: http://localhost:8086
+  - Grafana: http://localhost:3001
 
 ### or manually :
 
