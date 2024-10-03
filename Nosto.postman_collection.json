@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "6988cbe3-508c-42ab-a4ff-fe2fde47d926",
+		"name": "Nosto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29159483"
+	},
+	"item": [
+		{
+			"name": "convert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"sourceCurrency\": \"USD\",\r\n  \"targetCurrency\": \"GBP\",\r\n  \"amount\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/convert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"convert"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
