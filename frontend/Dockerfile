@@ -1,19 +1,20 @@
 # Use Node.js image
-FROM node:14
+FROM node:20-alpine
 
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and install dependencies
-COPY package.json ./
-COPY package-lock.json ./
+# Copy package.json and package-lock.json
+COPY package.json package-lock.json ./
+
+# Install dependencies
 RUN npm install
 
-# Copy the rest of the application code
+# Copy the rest of the application files
 COPY . .
 
 # Expose the application port
-EXPOSE 5173
+EXPOSE 4000
 
-# Start the application
-CMD ["npm", "run", "dev"]
+# Start the application in development mode
+CMD ["npm", "run", "dev"]  # Adjust if the start command is different in your package.json
