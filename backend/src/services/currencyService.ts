@@ -9,7 +9,7 @@ const CACHE_EXPIRY_SECONDS = 3600; // 1 hour
 
 // Create a Redis client
 const redisClient: RedisClientType = createClient({
-  url: 'redis://localhost:6379',
+  url: 'redis://redis:6379',
 });
 
 // Connect to Redis on startup

@@ -14,9 +14,11 @@ The API leverages the exchange rates provided at [swop.cx](https://swop.cx/) and
 
 ## Running the Application
 
-### Docker(Redis, InfluxDB, Grafana)
+### Running with Docker(Redis, InfluxDB, Grafana, Backend, Frontend)
 - cd nosto 
   - docker-compose up -d
+
+### or manually :
 
 ### Backend(Node JS Typscript)
 - cd backend (from nosto folder)
@@ -32,6 +34,8 @@ The API leverages the exchange rates provided at [swop.cx](https://swop.cx/) and
     - Default port is 4000 , if the port is busy or you got port in use error you can change port in frontend/.env file.
     - If you change default port for backend make sure to change API URL in frontend/.env file: VITE_API_URL
     - The frontend address will be http://localhost:4000
+
+## Other Considerations:
 
 ### Postman collection
 - Postman collection for convert API included in the project. You can download, import in Postman and use it.
